@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "640992466112",
+    "firebase_url": "https://farmchat-6ed5b.firebaseio.com",
+    "project_id": "farmchat-6ed5b",
+    "storage_bucket": "farmchat-6ed5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640992466112:android:0dfa5eaf1c6260f8",
+        "android_client_info": {
+          "package_name": "com.wordpress.gistschool.raji.farmchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640992466112-03q8ur8emjtasj1klvr58tmsn5qtendo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgfzC0qBEUPzKwPMiGusaaNIqA1-FjroA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

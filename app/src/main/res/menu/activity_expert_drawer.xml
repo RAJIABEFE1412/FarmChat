@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:iconTint="#000"
+            android:title="Blog Home" />
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Add post" />
+        <item
+            android:id="@+id/nav_me"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:iconTint="#000"
+            android:title="Dashboard" />
+    </group>
+    
+
+    <item android:title="Chats">
+        <menu>
+            <item
+                android:id="@+id/nav_chats_farmers"
+                android:iconTint="#000"
+                android:icon="@drawable/ic_mail_outline_black_24dp"
+                android:title="Chats" />
+        </menu>
+    </item>
+
+    <item android:title="Logging">
+        <menu>
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

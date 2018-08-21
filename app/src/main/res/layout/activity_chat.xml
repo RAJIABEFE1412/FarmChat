@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="40dp"
+                   android:src="#fff"
+                   android:id="@+id/userImg"
+                   android:layout_height="match_parent" />
+
+               <LinearLayout
+                   android:layout_width="310dp"
+                   android:layout_height="match_parent"
+                   android:layout_marginEnd="40dp"
+                   android:layout_marginRight="40dp"
+                   android:layout_weight="3"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:id="@+id/user_name"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginStart="16dp"
+
+                       android:textAppearance="?android:textAppearanceLarge"
+                       tools:text="chat name" />
+
+                   <TextView
+                       android:id="@+id/profession"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginStart="16dp"
+                       android:gravity="bottom"
+                       android:textAppearance="?android:textAppearanceMedium"
+                       tools:text="profession" />
+               </LinearLayout>
+               <ImageView
+                   android:src="@drawable/ic_brightness_1_black_24dp"
+                   android:id="@+id/presence"
+                   android:layout_marginTop="16dp"
+                   android:layout_marginEnd="8dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="8dp" />
+           </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_chat" />
+
+
+</android.support.design.widget.CoordinatorLayout>

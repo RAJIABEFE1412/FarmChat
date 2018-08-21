@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/sent_body"
+        android:text="hello, hello!"
+        android:background="@drawable/chat_drawable_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="11:40"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sent_body"
+        app:layout_constraintEnd_toStartOf="@+id/sent_body"
+        app:layout_constraintTop_toTopOf="@+id/sent_body" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_message_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/golden"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/recieved_message_name"
+        android:text="John Doe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/image_message_profile"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/recieved_message"
+        android:text="hi man, how are you?"
+        android:background="@drawable/chat_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="240dp"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/recieved_message_name"
+        app:layout_constraintLeft_toRightOf="@+id/image_message_profile"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/recieved_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:text="11:40"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/recieved_message"
+        app:layout_constraintLeft_toRightOf="@+id/recieved_message"
+        app:layout_constraintTop_toTopOf="@+id/recieved_message" />
+
+</android.support.constraint.ConstraintLayout>

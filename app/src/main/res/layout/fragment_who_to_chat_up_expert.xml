@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f4d8c4"
+    android:layout_height="match_parent"
+    tools:context=".whoToChatUpExpertActivity">
+
+   <ListView
+       android:divider="@android:color/transparent"
+       android:layout_width="match_parent"
+       android:layout_margin="8dp"
+       android:dividerHeight="8dp"
+       android:id="@+id/who_to_chat_up_expert"
+       android:layout_height="match_parent"/>
+
+</FrameLayout>

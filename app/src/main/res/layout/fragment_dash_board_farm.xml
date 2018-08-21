@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".DashBoardFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#eaeaea"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        tools:context=".DashBoardFragment">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_height="150dp"
+                android:id="@+id/userImg"
+                android:layout_marginBottom="40dp"
+                app:civ_circle_background_color="#000"
+                app:civ_border_overlay="true"
+                android:src="@drawable/ic_person_black_24dp"
+                android:layout_width="150dp" />
+
+
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="USER NAME"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/UserNameText"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="USER EMAIL"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/UserEmailText"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:text="USER ID"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:id="@+id/UseridText"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:textAllCaps="true"
+            android:id="@+id/sign_out"
+            android:fontFamily="sans-serif"
+            android:layout_margin="8dp"
+            android:elevation="8dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:background="#6c0406" />
+
+
+    </LinearLayout>
+</ScrollView>

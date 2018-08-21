@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/lecturerImage"
+            app:civ_circle_background_color="@color/colorPrimary"
+            android:src="@drawable/ic_menu_send"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/lecturerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/lecturerImage"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/lecturerImage"
+            android:layout_toRightOf="@+id/lecturerImage"
+            android:text="Dr. A.O Sarumi"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+
+            android:id="@+id/blogPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lecturerImage"
+            android:layout_margin="4dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:text="As you can see, the advantage of the XML version is that it is more clearly laid-out. This is not
+just a matter of personal taste; by writing each attribute name as you assign it, there is never
+any ambiguity as to which value you are assigning. Look at the Java version and see if you can
+remember what...." />
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_below="@id/blogPost"
+    android:background="#000"
+    android:layout_height="200dp"
+    android:layout_marginTop="4dp"
+    android:scaleType="centerCrop"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/iv_home"
+    />
+
+        <TextView
+
+            android:id="@+id/datePublished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_alignParentEnd="true"
+            android:text="Thurs,20/30/2018"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_alignParentRight="true" />
+
+
+
+
+
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_below="@id/iv_home"
+            android:id="@+id/like_post"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_thumb_up_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+
+            android:id="@+id/double_tap"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/blogPost"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            android:backgroundTint="#860408"
+            android:visibility="invisible"
+            android:src="@drawable/ic_thumb_up_black_24dp"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+
+            android:id="@+id/comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/iv_home"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_mail_black_24dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_mail_black_24dp"
+            android:gravity="center"
+            android:text="@string/comments"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#2b2fa1" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
